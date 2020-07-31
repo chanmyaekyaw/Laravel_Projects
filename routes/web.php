@@ -40,7 +40,18 @@
 //     ]);
 // });
 
- Route::get('/', 'ReceipeController@index');
+ Route::resource('receipe', 'ReceipeController');
+ // Route::get('receipe', 'ReceipeController@index');  //get all index page (GET) receipe
+ // Route::get('receipe/create_receipe', 'ReceipeController@createReceipeForm'); //create form(GET) receipe/create
+ // Route::get('receipe/{id}', 'ReceipeController@show');  //show data (GET) receipe/1
+ // Route::post('receipe','ReceipeController@create'); //create receipe (POST) receipe
+ // Route::get('receipe/{id}/edit', 'ReceipeController@edit'); //edit form (GET) receipe/1/edit
+ // Route::patch('receipe/{id}', 'ReceipeController@update'); //update form (PATCH) receipe/1
+ // Route::delete('receipe/{id}', 'ReceipeController@delete'); //delete receipe (DELETE) receipe/1
+
+
+
+
 
 
 
