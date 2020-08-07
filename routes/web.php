@@ -12,56 +12,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-// Route::get('/', 'HomeController@index');
-// Route::get('php', 'HomeController@phpPage');
-// Route::get('js', 'HomeController@jsPage');
-
-
-// Route::get('/', function () {
-//     return view('home',['name'=>"Home Page Template"]);
-//     // return view('home')->with('name',"Home page");   //Can also use this
-// });
-// Route::get('php', function () {
-//     return view('php',[
-//     	'data'=>array(
-//     		'lesson1'=>"This is php lesson1",
-// 			'lesson2'=>"This is php lesson2",
-// 			'lesson3'=>"This is php lesson3"
-// 		)
-//     ]);
-// });
-// Route::get('js', function () {
-//     return view('js',[
-//     	'data'=>array(
-//     		'lesson1'=>"This is js lesson1",
-// 			'lesson2'=>"This is js lesson2",
-// 			'lesson3'=>"This is js lesson3"
-// 		)
-//     ]);
-// });
 
  Route::resource('receipe', 'ReceipeController');
- // Route::get('receipe', 'ReceipeController@index');  //get all index page (GET) receipe
- // Route::get('receipe/create_receipe', 'ReceipeController@createReceipeForm'); //create form(GET) receipe/create
- // Route::get('receipe/{id}', 'ReceipeController@show');  //show data (GET) receipe/1
- // Route::post('receipe','ReceipeController@create'); //create receipe (POST) receipe
- // Route::get('receipe/{id}/edit', 'ReceipeController@edit'); //edit form (GET) receipe/1/edit
- // Route::patch('receipe/{id}', 'ReceipeController@update'); //update form (PATCH) receipe/1
- // Route::delete('receipe/{id}', 'ReceipeController@delete'); //delete receipe (DELETE) receipe/1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Route::get('/home', 'HomeController@index');
+ 
+Auth::routes();
 
 
 
