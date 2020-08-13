@@ -1,5 +1,7 @@
 <?php
 
+use App\Receipe;
+
 // use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,10 @@
 |
 */
 
+
+// Route::get('/',function(){
+// 	dd(app('test'));
+// });
  Route::resource('receipe', 'ReceipeController');
 Route::get('/home', 'HomeController@index');
  
