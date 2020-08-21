@@ -21,7 +21,10 @@ use App\Receipe;
 // });
  Route::resource('receipe', 'ReceipeController');
 Route::get('/home', 'HomeController@index');
- 
+Route::get('/','PublicController@index');
+Route::get('detail/{id}','PublicController@show');
+Route::resource('category','CategoryController');
+// Route::get('/category/{id}','CategoryController@show');
 Auth::routes();
 
 

@@ -13,7 +13,7 @@
                     @endif
 
                     <div class="container">
-                    <h2>Home Page</h2>
+                    <h2>Category Home Page</h2>
                     @if(session("message"))
                     <!-- <p>{{ session("message") }}</p> -->
                     <div class="alert alert-success" role="alert">
@@ -21,16 +21,17 @@
                     </div>
                     @endif
                     <div>
-                        <a href="/receipe/create"><button class="btn btn-success">Create</button></a>
+                        <a href="/category/create">
+                            <button class="btn btn-success">Create Category</button></a>
                     </div>
                     <br>
-                    @foreach($receipes as $value)
-                    <a href="/receipe/{{ $value->id }}"><li>{{ $value->name }}</li></a>
+                    @foreach($category as $value)
+                    <a href="/category/{{ $value->id }}"><li>{{ $value->name }}</li></a>
                         <hr>
 
                     @endforeach
                     </div>
-         {{ $receipes->links() }}
+         {{ $category->links() }}
         </div>
     </div>
 </div>
